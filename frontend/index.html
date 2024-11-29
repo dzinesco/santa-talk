@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santa Chat</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1502.0.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- Main Screen -->
+        <div id="main-screen" class="screen active">
+            <div class="background"></div>
+            <div class="content">
+                <h1>Chat with Santa!</h1>
+                <button id="start-chat" class="glow-button">Start Chatting!</button>
+            </div>
+        </div>
+
+        <!-- Chat Screen -->
+        <div id="chat-screen" class="screen">
+            <div class="chat-container">
+                <div class="messages" id="messages"></div>
+                <div class="input-container">
+                    <form id="message-form">
+                        <input type="text" id="message-input" placeholder="Type your message to Santa...">
+                        <button type="submit" id="send-button">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                        <button type="button" id="voice-button" class="voice-button">
+                            <i class="fas fa-microphone"></i>
+                            <span id="mic-status">🎙️ Click to start</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

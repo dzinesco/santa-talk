@@ -1,0 +1,13 @@
+{
+  "name": "santa-talk-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for SantaTalk application",
+  "main": "static-server.js",
+  "scripts": {
+    "start": "node static-server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "aws-sdk": "^2.1502.0"
+  }
+}
